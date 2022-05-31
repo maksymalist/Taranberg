@@ -100,6 +100,7 @@ const AnimatedImage = (props: Props) => {
 
   return (
     <motion.div
+      style={{ maxWidth: "400px", height: "auto", margin: "auto" }}
       ref={ref}
       className="Box"
       initial="hidden"
