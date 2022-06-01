@@ -90,6 +90,20 @@
   color: #e5e5e5;
 }
 
+.description__link {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #e5e5e5;
+}
+
+.description__link:hover {
+  color: #ffffff;
+}
+
 .contact__us__button {
   font-family: "Inter";
   font-style: normal;

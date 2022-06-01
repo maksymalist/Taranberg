@@ -3,8 +3,6 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
-import { motion } from "framer-motion";
-
 //images
 import Chef from "../images/Chef.png";
 import Detective from "../images/Detective.png";

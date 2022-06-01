@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import TaranbergLogo from "../images/TaranbergLogo.png";
 import styles from "../styles/Nav.module.css";
 
@@ -17,6 +18,9 @@ function Nav({}: Props) {
   const isMobile = useMediaQuery("(max-width:700px)");
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const router = useRouter();
+  const path = router.pathname;
+
   return (
     <>
       {menuOpen ? (
@@ -31,13 +35,37 @@ function Nav({}: Props) {
           </div>
           <div className={styles.menu__content}>
             <Link href="/">
-              <a className={styles.menu__link}>Home</a>
+              <a
+                className={
+                  path === "/"
+                    ? styles.menu__link__bold
+                    : styles.menu__link__bold
+                }
+              >
+                Home
+              </a>
             </Link>
             <Link href="/about">
-              <a className={styles.menu__link}>About</a>
+              <a
+                className={
+                  path === "/about"
+                    ? styles.menu__link__bold
+                    : styles.menu__link__bold
+                }
+              >
+                About
+              </a>
             </Link>
             <Link href="/projects">
-              <a className={styles.menu__link}>Projects</a>
+              <a
+                className={
+                  path === "/projects"
+                    ? styles.menu__link__bold
+                    : styles.menu__link__bold
+                }
+              >
+                Projects
+              </a>
             </Link>
             <Link href="/contact">
               <a className={styles.menu__contact__us}>Contact Us</a>
@@ -54,13 +82,27 @@ function Nav({}: Props) {
           {!isMobile ? (
             <div>
               <Link href="/">
-                <a className={styles.link}>Home</a>
+                <a className={path === "/" ? styles.link__bold : styles.link}>
+                  Home
+                </a>
               </Link>
               <Link href="/about">
-                <a className={styles.link}>About</a>
+                <a
+                  className={
+                    path === "/about" ? styles.link__bold : styles.link
+                  }
+                >
+                  About
+                </a>
               </Link>
               <Link href="/projects">
-                <a className={styles.link}>Projects</a>
+                <a
+                  className={
+                    path === "/projects" ? styles.link__bold : styles.link
+                  }
+                >
+                  Projects
+                </a>
               </Link>
               <Link href="/contact">
                 <a className={styles.contact__us}>Contact Us</a>

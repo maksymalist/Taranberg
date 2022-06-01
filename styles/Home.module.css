@@ -151,7 +151,7 @@
   line-height: 92px;
   max-width: 961px;
   color: #005b3a;
-  margin-bottom: 30px !important;
+  margin-bottom: 0px !important;
 }
 .title__white {
   font-family: "Noto Serif KR";
@@ -321,7 +321,7 @@
   height: 490px !important;
   width: auto !important;
 }
-.detective__image {
+/* .detective__image {
 }
 .writer__image {
 }
@@ -332,7 +332,7 @@
 .tester__image {
 }
 .astronaut__image {
-}
+} */
 
 .check__section {
   display: flex;

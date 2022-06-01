@@ -18,6 +18,14 @@
   line-height: 22px;
   margin: 20px;
 }
+.link__bold {
+  font-family: "Inter", sans-serif !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 20px;
+}
 .contact__us {
   font-family: "Inter", sans-serif !important;
   font-style: normal;
@@ -72,6 +80,17 @@
   margin-bottom: 10px;
   font-style: normal;
   font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+}
+
+.menu__link__bold {
+  font-family: "Inter", sans-serif !important;
+  color: white;
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: 700;
   font-size: 24px;
   line-height: 29px;
   text-align: center;
